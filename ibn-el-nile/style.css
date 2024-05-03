@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+:root {
+    --red-color: #ED2A2E;
+    --fire-color: #c85a23;
+}
+
+
+
+/* Nav Start */
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    padding: 0 10px;
+    color: white;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-bar .logo {
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-left: 20px;
+    background-image: url(images/LOGO.png);
+    height: 100%;
+    width: 20%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-bar .items {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-bar .items a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+.nav-bar .items a:hover {
+    border-bottom: 7px solid var(--red-color);
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    color: var(--red-color);
+}
+
+
+/* Nav End */
+
+/* Header Start */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero .back {
+    background-image: url("images/sprinkler.jpg");
+    background-color: rgb(24, 23, 23);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero .main-title {
+    font-size: 9rem;
+    margin-top: 8rem;
+    color: var(--red-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 5px 3px 15px rgba(0, 0, 0, 0.475);
+    text-transform: uppercase;
+    transform: translateX(6rem);
+}
+
+.hero .description {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 4rem;
+    text-transform: capitalize;
+    /* color: var(--fire-color); */
+    color: black;
+    transform: translateX(6rem);
+}
+
+.hero .btn {
+    width: 8rem;
+    height: 3rem;
+    background-color: var(--red-color);
+    color: white;
+    font-size: 1.2rem;
+    transform: translateX(6rem);
+    border-radius: .5rem;
+    border: none;
+}
+
+.hero .btn:hover {
+    box-shadow: 3px 5px 15px black;
+    cursor: pointer;
+}
+
+/* Header End */
+
+/* Projects Start */
+.projects {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .projects-title {
+    font-size: 4rem;
+    margin: 6rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.projects .container {
+    width: 90vw;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects .container .project {
+    border: 3px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 3px 15px rgba(0, 0, 0, 0.7);
+    width: 30%;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 2rem;
+    /* background-color: rgba(255, 0, 0, 0.9); */
+    background-color: black;
+}
+
+.projects .container .project .project-title {
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 3px solid white;
+}
+
+.projects .container .project img {
+    width: 90%;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.projects .container .project p {
+    font-size: 1.5rem;
+    border-top: 3px solid white;
+    padding-top: 1rem;
+    color: red;
+}
